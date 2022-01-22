@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card_printing</title>
+</head>
+<body>
+
+    <style>
+        body{
+            display: flex;
+            background-color: aqua;
+            justify-content: center;
+            transition: 3s!important;
+        }
+    </style>
+
+
+    <h2 id="example"></h2>
+    <h2>-</h2>
+    <h2 id="example2"></h2>
+    <h2>-</h2>
+    <h2 id="example3"></h2>
+    <h2>-</h2>
+    <h2 id="example4"></h2>
+    <script>
+        function rand(){
+        document.getElementById('example').innerHTML = Math.floor(Math.random()*1000)+1000;
+        document.getElementById('example2').innerHTML = Math.floor(Math.random()*1000)+1000;
+        document.getElementById('example3').innerHTML = Math.floor(Math.random()*1000)+1000;
+        document.getElementById('example4').innerHTML = Math.floor(Math.random()*1000)+1000;
+        }
+
+          setInterval(rand,1000);
+    </script>
+</body>
+</html>
